@@ -1,0 +1,32 @@
+{
+  "id": 1,
+  "isOnboardingComplete": true,
+  "minimumDailyHours": 4,
+  "targetDailyHours": 8,
+  "burnoutThreshold": 10,
+  "maxStudyHoursPerDay": 14,
+  "currentStreak": 0,
+  "subjects": [
+    {
+      "id": "physics",
+      "name": "Physics",
+      "color": "#8b5cf6",
+      "order": 0,
+      "enabled": true
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "color": "#3b82f6",
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "id": "maths",
+      "name": "Mathematics",
+      "color": "#10b981",
+      "order": 2,
+      "enabled": true
+    }
+  ]
+}

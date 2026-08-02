@@ -1,0 +1,59 @@
+/**
+ * SwaritSensei.ai - Hover State Fixes
+ * Professional dark mode hover effects across the app
+ */
+
+/* Card hover states - subtle dark mode glow */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+/* Button hover states - no solid white */
+button:hover:not(:disabled):not([data-state="active"]) {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Prevent white background on hover for specific cards */
+[class*="bg-gradient-to"]:hover {
+  filter: brightness(1.1);
+}
+
+/* Recharts/Chart container hover fixes */
+.recharts-wrapper,
+.recharts-surface {
+  background: transparent !important;
+}
+
+/* TabsTrigger hover fixes */
+[role="tab"]:not([data-state="active"]):hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Input hover states */
+input:hover:not(:focus) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Card grid items */
+.card-grid-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-grid-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.2);
+}
+
+/* Prevent hover on disabled elements */
+[disabled]:hover,
+[aria-disabled="true"]:hover {
+  filter: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
